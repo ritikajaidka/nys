@@ -1,0 +1,24 @@
+{
+  "name": "nys",
+  "version": "1.0.0",
+  "description": "Website for Srila Navayogendra Swami Maharaj",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ritikajaidka/nys.git"
+  },
+  "author": "Ritika Jaidka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ritikajaidka/nys/issues"
+  },
+  "homepage": "https://github.com/ritikajaidka/nys#readme",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1"
+  }
+}
