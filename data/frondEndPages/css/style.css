@@ -1,0 +1,92 @@
+/*
+--- 01 Typography System
+
+  - Font sizes(px):
+    10/ 12/ 14/ 16/ 18/ 20/ 24/ 30/ 36/ 44/ 52/ 62/ 74/ 86/ 98
+
+  - Font weights::after
+
+
+  - Line heights:
+  Default: 1
+
+  - Spacing system (px)
+    2/ 4/ 8/ 12/ 16/ 24/ 32/ 48/ 64/ 80/ 96/ 128
+    
+--- 02 COLORS
+
+  - Primary: #e67e22
+
+  - Tints: #fdf2e9
+  - Shades:
+  - Accents:
+  - Greys: #555, #444
+
+--- 05 Shadows
+--- 06 Boder-radius
+--- 07 Whiteshpace
+
+
+  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+header {
+  background-color: pink;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(52, 38, 38, 0.6),
+      rgba(52, 38, 38, 0.6)
+    ),
+    url("../images/main.jpg");
+  background-size: cover;
+}
+
+.section-one {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+.firstdiv {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+.heading-primary2 {
+  font-family: cursive;
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.74);
+  margin-bottom: 3.2rem;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+
+  transform: translate(-50%, -50%);
+}
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 3.2rem;
+}
+.mainImage {
+  width: 100%;
+}
