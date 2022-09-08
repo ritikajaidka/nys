@@ -1,0 +1,11 @@
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* MOBILE NAVIGATION*/
+
+.btn-mobile-nav {
+  display: block;
+}

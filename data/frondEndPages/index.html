@@ -5,32 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="queries/queries.css" />
     <title>NYS</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
   </head>
   <body>
-    <header>
+    <div id="header"></div>
+    <!--Remaining section-->
+
+    <section class="landing_section">
       <nav class="container">
-        <div>Logo</div>
-        <div>Navigation</div>
-        <div class="section-dup">
-          <h1 class="heading-primary2">H.H Navayogendra Swami</h1>
-        </div>
-      </nav>
-    </header>
-    <section class="section-one">
-      <div class="firstdiv">
-        <div class="first-text-box">
+        <div class="div_primary_heading">
           <h1 class="heading-primary">H.H Navayogendra Swami</h1>
         </div>
-
-        <div class="main-img">
-          <img
-            src="images/main.jpg"
-            class="mainImage"
-            alt="navayogendra swami"
-          />
-        </div>
-      </div>
+      </nav>
     </section>
+    <div id="footer"></div>
   </body>
 </html>
