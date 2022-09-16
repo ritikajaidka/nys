@@ -155,15 +155,44 @@
     width: 100%;
   }
 
-  /* header .navbar ul li ul li ul {
-    width: 100%;
-    left: 0%;
-  } */
+  /**********AUDIO TRANSCRIPT*****************/
+
+  .audioContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .audioTranscript {
+    line-height: 8rem;
+    font-size: 4.4rem;
+    font-weight: 700;
+    font-family: cursive;
+  }
+  .relateddiv,
+  h4 {
+    font-size: 4.4rem;
+  }
+  /**************************************************FOOTER****************************************/
+
+  footer {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
 }
 
 /*BELOW 704px(Smaller tablets)*/
 
-/* @media (max-width: 44em) {
+@media (max-width: 44em) {
   html {
     font-size: 26%;
   }
@@ -178,4 +207,4 @@
   .heading-primary {
     font-size: 3.6rem;
   }
-} */
+}

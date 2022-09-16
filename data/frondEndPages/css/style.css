@@ -47,7 +47,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: cursive;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -61,7 +61,7 @@ body {
   height: 100vh;
   /* position: relative; */
   background-image: linear-gradient(
-      rgba(52, 38, 38, 0.6),
+      rgba(255, 255, 255, 0.3),
       rgba(52, 38, 38, 0.6)
     ),
     url("../images/main.jpg");
@@ -92,6 +92,7 @@ body {
   /* background-color: #fdf2e9; */
   /**/
   background: #fff;
+
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
   padding: 1.8rem 7%;
   /**/
@@ -212,7 +213,7 @@ header .main-nav ul li a:hover {
   background: #333;
   color: #fff;
   width: 100%;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
 }
 
 header .main-nav ul li ul {
@@ -230,4 +231,188 @@ header .main-nav ul li ul li {
 header .main-nav ul li:focus-within > ul,
 header .main-nav ul li:hover > ul {
   display: grid;
+}
+
+/*************************************************/
+/******************Audio Transcript***************/
+/*************************************************/
+
+.audioContainer {
+  /* background-color: #fdf2e9; */
+  /* max-width: 130rem; */
+  margin: 0 auto;
+  /* padding: 0 3.2rem; */
+  display: grid;
+  grid-template-columns: 1fr 40rem;
+  column-gap: 1rem;
+  row-gap: 18rem;
+  align-items: start;
+  /* margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 18.75rem;
+  
+
+  align-items: start; */
+}
+
+.audioHeader {
+  grid-column: 1/-1;
+  /* background-color: green; */
+}
+
+.audioTranscript {
+  margin-left: auto;
+  margin-right: auto;
+  grid-column: 1/2;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-family: cursive;
+  line-height: 3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  /* background-color: yellow; */
+}
+
+.audio-relatedPosts {
+  border: 3px solid #333;
+  color: #333;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.relateddiv,
+h4 {
+  font-family: cursive;
+  font-size: 1.8rem;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.relateddiv a {
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+}
+.audio {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+/*******************COMING SOON*******************/
+
+.cs_container {
+  font-size: medium;
+  color: #333;
+  text-align: center;
+  font-family: cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  /* padding: 1.8rem; */
+  /* gap: 2rem; */
+}
+.cs_container h1 {
+  padding: 4rem;
+}
+
+/*******************FRONT PAGE IMAGE AND SIDE WRITING*********************/
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+/* .grid--center-v {
+  align-items: center;
+} */
+.section-pr,
+.section-sp {
+  padding: 9.6rem 10rem;
+}
+
+.step-img {
+  width: 80%;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step-img-box::after,
+.step-img-box::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  width: 100%;
+  height: 15%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 100%;
+  padding-bottom: 60%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
+.heading-secondary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-size: 3.2rem;
+  font-family: cursive;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-size: 3.6rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
 }
