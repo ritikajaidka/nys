@@ -207,4 +207,13 @@
   .heading-primary {
     font-size: 3.6rem;
   }
+
+  /* .logo {
+    height: 6.2rem;
+    width: 7.4rem;
+  } */
+
+  .header {
+    height: 8.6rem;
+  }
 }
